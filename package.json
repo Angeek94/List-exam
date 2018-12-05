@@ -1,0 +1,11 @@
+{
+  "name": "list-exam",
+  "version": "1.0.0",
+  "description": "list-exam",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "angeek",
+  "license": "MIT"
+}
