@@ -1,11 +1,19 @@
 {
   "name": "list-exam",
-  "version": "1.0.0",
-  "description": "list-exam",
+  "version": "1.2.10",
+  "description": "new functionality",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angeek94/List-exam.git"
+  },
   "author": "angeek",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Angeek94/List-exam/issues"
+  },
+  "homepage": "https://github.com/Angeek94/List-exam#readme"
 }
