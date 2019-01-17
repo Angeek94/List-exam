@@ -8,6 +8,9 @@ exports.reset=function(){
     list=[];
 }
 
+exports.resetReadUsers=function(){
+    readUsers=[];
+}
 exports.insertToDo=function(name,description,completed,user){
   
    ToDo= {
@@ -58,13 +61,15 @@ exports.readListByUser=function(user){
     var j=0;
     for(var i=0;i<list.length;i++){
     
-        if(list[i].assignedTo==user){
+        if(list[i].assignedTo===user){
             readUsers[j]=list[i];
             j++;
         }
     }
-return readUsers;
+    return readUsers;
+
 }
+
 exports.readListByStatus=function(status){
     
     var j=0;
