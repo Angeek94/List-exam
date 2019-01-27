@@ -1,6 +1,6 @@
 {
   "name": "list-exam",
-  "version": "1.6.4",
+  "version": "1.8.9",
   "description": "new functionality",
   "main": "app.js",
   "scripts": {

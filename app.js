@@ -11,6 +11,10 @@ exports.reset=function(){
 exports.resetReadUsers=function(){
     readUsers=[];
 }
+exports.insertUsers= function(user){
+    users.push(user);
+    
+}
 exports.insertToDo=function(name,description,completed,user){
   
    ToDo= {
@@ -20,16 +24,15 @@ exports.insertToDo=function(name,description,completed,user){
         completed:completed ,
         assignedTo: user
     }
-    if(user.toLowerCase()=="tizio"||user.toLowerCase()=="caio"||user.toLowerCase()=="sempronio"){
-        list.push(ToDo);
+    if(users.indexOf(user)>-1){
+        list.push(ToDo)
     }
    
-return list;
+return ToDo;
 }
 
 exports.getUsers=function(){
-     users=["tizio","caio","sempronio"];
-     return users;
+      return users;
  }
 exports.deleteToDo=function(idDelete){
     for(var i=0;i<list.length;i++){
